@@ -14,9 +14,9 @@
         <nav class="menu-nav">
             <ul class="menu-list">
                 <li class="menu-item"><a href="#">Главная</a></li>
-                <li class="menu-item"><a href="#">О нас</a></li>
-                <li class="menu-item"><a href="#">Блог</a></li>
-                <li class="menu-item"><a href="#">Контакты</a></li>
+                <li class="menu-item"><a href="#sect_blocks">Блоки</a></li>
+                <li class="menu-item"><a href="#sect_inlineblocks">Строчные блоки</a></li>
+                <li class="menu-item"><a href="#sect_flex">Флексы</a></li>
             </ul>
         </nav>
         <nav class="menu-bhv">
@@ -32,9 +32,11 @@
 
     <main>
         <div class="main-wrapper">
-            <section class="elements elements-blocks">
-                <h2 class="elements-title">Блочная модель</h2>
+            <section class="elements elements-blocks" id="sect_blocks">
+                <header class="elements-header">
+                    <h2 class="elements-title">Блочная модель</h2>
                 <p class="elements-desc">Тут все блоки имеют тип отображения <code>display: block;</code></p>
+                </header>
                 <artcle class="element element-block"></artcle>
                 <artcle class="element element-block"></artcle>
                 <artcle class="element element-block"></artcle>
@@ -44,9 +46,11 @@
                 <artcle class="element element-block"></artcle>
             </section>
 
-            <section class="elements elements-inlineblocks">
-                <h2 class="elements-title">Строчно-блочная модель</h2>
+            <section class="elements elements-inlineblocks" id="sect_inlineblocks">
+                <header class="elements-header">
+                    <h2 class="elements-title">Строчно-блочная модель</h2>
                 <p class="elements-desc">Тут все блоки имеют тип отображения <code>display: inline-block;</code></p>
+                </header>
                 <artcle class="element element-inlineblock"></artcle>
                 <artcle class="element element-inlineblock"></artcle>
                 <artcle class="element element-inlineblock"></artcle>
@@ -54,6 +58,22 @@
                 <artcle class="element element-inlineblock"></artcle>
                 <artcle class="element element-inlineblock"></artcle>
                 <artcle class="element element-inlineblock"></artcle>
+            </section>
+
+            <section class="elements" id="sect_flex">
+                <header class="elements-header">
+                    <h2 class="elements-title">Пора флексить</h2>
+                <p class="elements-desc">Тут все блоки имеют тип отображения <code>display: flex;</code></p>
+                </header>
+                <div class="elements-wrapper elements-flex">
+                    <artcle class="element element-flex"></artcle>
+                <artcle class="element element-flex"></artcle>
+                <artcle class="element element-flex"></artcle>
+                <artcle class="element element-flex"></artcle>
+                <artcle class="element element-flex"></artcle>
+                <artcle class="element element-flex"></artcle>
+                <artcle class="element element-flex"></artcle>
+                </div>
             </section>
         </div>
     </main>

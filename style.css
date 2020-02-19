@@ -8,8 +8,6 @@ p {
     margin: 0;
 }
 
-
-
 .site-header {
     display: flex;
     justify-content: center;
@@ -117,4 +115,9 @@ p {
 
 .element-inlineblock:first-of-type {
     margin-left: 10px;
+}
+
+.elements-flex {
+    display: flex;
+    justify-content: flex-start;
 }
