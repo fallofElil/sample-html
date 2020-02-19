@@ -4,12 +4,19 @@ body {
     font-family: Arial, sans-serif;
 }
 
+p {
+    margin: 0;
+}
+
+
+
 .site-header {
     display: flex;
     justify-content: center;
     width: 100%;
     padding-top: 1em;
     padding-bottom: 1em;
+    margin-bottom: 20px;
     background-color: #60b1d1;
 }
 
@@ -57,4 +64,18 @@ body {
 
 .menu-bhv_toggle {
     margin-left: 20px;
+}
+
+.main-wrapper {
+    width: 1050px;
+}
+
+.elements {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.element {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #2081c3;
 }
