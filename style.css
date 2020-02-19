@@ -1,4 +1,60 @@
 body {
     margin: 0;
+    background-color: #f7f9f9;
     font-family: Arial, sans-serif;
+}
+
+.site-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #60b1d1;
+}
+
+.header-wrapper {
+    width: 1050px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.site-title {
+    margin: 0;
+    margin-right: 2em;
+    line-height: 1em;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu-item {
+    margin-right: 15px;
+}
+
+.menu-item a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu-bhv {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+}
+
+.menu-bhv_toggle {
+    margin-left: 20px;
 }
