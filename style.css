@@ -75,6 +75,7 @@ p {
 
 .elements {
     width: 740px;
+    padding: 10px;
     margin-bottom: 25px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     background-color: azure;
@@ -120,4 +121,8 @@ p {
 .elements-flex {
     display: flex;
     justify-content: flex-start;
+}
+
+.elements-flex--sb {
+    justify-content: space-between;
 }
