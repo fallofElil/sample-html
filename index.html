@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,27 @@
     <link rel="stylesheet" href="style.css">
     <title>Учебный проект</title>
 </head>
+
 <body>
-    <header class="site-header">
+    <header class="site-header site-header--static">
         <div class="header-wrapper">
             <h1 class="site-title">CSS is simple</h1>
-        <nav class="menu-nav">
-            <ul class="menu-list">
-                <li class="menu-item"><a href="#">Главная</a></li>
-                <li class="menu-item"><a href="#sect_blocks">Блоки</a></li>
-                <li class="menu-item"><a href="#sect_inlineblocks">Строчные блоки</a></li>
-                <li class="menu-item"><a href="#sect_flex">Флексы</a></li>
-            </ul>
-        </nav>
-        <nav class="menu-bhv">
-            <select class="menu-bhv_select" name="menu-bhv" id="menu_bhv">
-                <option value="static" selected>Статичное</option>
-                <option value="sticky">Прилипает к верху</option>
-                <option value="absolute">Абсолютное</option>
-            </select>
-            <button class="menu-bhv_toggle" id="menu_toggle">Переключить</button>
-        </nav>
+            <nav class="menu-nav">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="#" tabindex="0">Главная</a></li>
+                    <li class="menu-item"><a href="#sect_blocks" tabindex="0">Блоки</a></li>
+                    <li class="menu-item"><a href="#sect_inlineblocks" tabindex="0">Строчные блоки</a></li>
+                    <li class="menu-item"><a href="#sect_flex" tabindex="0">Флексы</a></li>
+                </ul>
+            </nav>
+            <nav class="menu-bhv">
+                <select class="menu-bhv_select" name="menu-bhv" id="menu_bhv">
+                    <option value="static" selected>Статичное</option>
+                    <option value="sticky">Прилипает к верху</option>
+                    <option value="absolute">Абсолютное</option>
+                </select>
+                <button class="menu-bhv_toggle" id="menu_toggle">Переключить</button>
+            </nav>
         </div>
     </header>
 
@@ -35,7 +37,7 @@
             <section class="elements elements-blocks" id="sect_blocks">
                 <header class="elements-header">
                     <h2 class="elements-title">Блочная модель</h2>
-                <p class="elements-desc">Тут все блоки имеют тип отображения <code>display: block;</code></p>
+                    <p class="elements-desc">Тут все блоки имеют тип отображения <code>display: block;</code></p>
                 </header>
                 <artcle class="element element-block"></artcle>
                 <artcle class="element element-block"></artcle>
@@ -49,7 +51,7 @@
             <section class="elements elements-inlineblocks" id="sect_inlineblocks">
                 <header class="elements-header">
                     <h2 class="elements-title">Строчно-блочная модель</h2>
-                <p class="elements-desc">Тут все блоки имеют тип отображения <code>display: inline-block;</code></p>
+                    <p class="elements-desc">Тут все блоки имеют тип отображения <code>display: inline-block;</code></p>
                 </header>
                 <artcle class="element element-inlineblock"></artcle>
                 <artcle class="element element-inlineblock"></artcle>
@@ -63,7 +65,7 @@
             <section class="elements" id="sect_flex">
                 <header class="elements-header">
                     <h2 class="elements-title">Пора флексить</h2>
-                <p class="elements-desc">Тут все блоки имеют тип отображения <code>display: flex;</code></p>
+                    <p class="elements-desc">Тут все блоки имеют тип отображения <code>display: flex;</code></p>
                 </header>
                 <div class="elements-wrapper elements-flex">
                     <artcle class="element element-flex"></artcle>
@@ -75,14 +77,29 @@
                     <artcle class="element element-flex"></artcle>
                 </div>
             </section>
-            <section class="elements" id="sect_flex">
+
+            <section class="elements" id="sect_flex_sb">
                 <header class="elements-header">
                     <h2 class="elements-title">Пора флексить</h2>
-                <p class="elements-desc">Тут все блоки имеют тип отображения <code>display: flex; justify-content: space-between;</code></p>
+                    <p class="elements-desc">Тут все блоки имеют тип отображения
+                        <code>display: flex; justify-content: space-between;</code></p>
                 </header>
-                <div class="elements-wrapper elements-flex">
+                <div class="elements-wrapper elements-flex elements-flex--sb">
                     <artcle class="element element-flex"></artcle>
                     <artcle class="element element-flex"></artcle>
+                    <artcle class="element element-flex"></artcle>
+                    <artcle class="element element-flex"></artcle>
+                    <artcle class="element element-flex"></artcle>
+                </div>
+            </section>
+
+            <section class="elements" id="sect_flex_sa">
+                <header class="elements-header">
+                    <h2 class="elements-title">Пора флексить</h2>
+                    <p class="elements-desc">Тут все блоки имеют тип отображения
+                        <code>display: flex; justify-content: space-around;</code></p>
+                </header>
+                <div class="elements-wrapper elements-flex elements-flex--sa">
                     <artcle class="element element-flex"></artcle>
                     <artcle class="element element-flex"></artcle>
                     <artcle class="element element-flex"></artcle>
@@ -94,5 +111,7 @@
     </main>
 
     <footer></footer>
+
 </body>
+
 </html>
